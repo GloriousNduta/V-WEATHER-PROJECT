@@ -4,28 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla Weather Application</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="weather-app">
     <header>
-      <form>
+      <form id="search-form">
         <input class="search-form-input"type="search" placeholder="Enter a city" required />
         <input class="search-input-button" type="submit" value="search" />
       </form>
     </header>
     <main>
-      <div >
-        <h1 class="weather-app-city">Paris</h1>
+    <div>
+        <h1 class="weather-app-city" id="city">Paris</h1>
         <div class="weather-app-data">
         <p class="weather-app-details">
-          Tuesday 14:49, Scattered clouds<br />
-          Humidity:<strong>66%</strong>, Wind:<strong>4.63km/h</strong>
+          <h3 id="date">Tuesday</h3>
+          <h3 id="time">14:49</h3>, <h3 id="description">Scattered clouds
+          </h3> 
+          <br />
+         <h3 id="humidity">Humidity:<strong>66%</strong></h3> , <h3 id="wind-speed">Wind:<strong>4.63km/h</strong></h3>
         </p>
       <div class="weather-container">
-        <div class="icon">☀</div>
-        <div class="temperature">21</div>
-        <div class="unit">℃</div></div>
+        <p class="icon" id="icons">☀</p>
+        <p class="temperature" id="temp">21</p>
+        <p class="unit">℃</p></div>
     </div>
     </main>
   </body>
@@ -34,14 +38,12 @@
     <a href="https://github.com/Glorious" target="_blank"> Glorious Muiruri </a
     > ,open-sourced on 
     <a
-      href="https://github.com/GloriousNduta/VANILLA-WEATHER-PROJECT"
+      href="https://github.com/GloriousNduta/V-WEATHER-PROJECT"
       target="_blank"
       >Github</a
     > and website hosted on <a href="https://ndungu.netlify.app/" target="_blank"
-      >Netlify</a
-    >
+      >Netlify</a>
   </footer>
+  <script src="src/index.js"></script>
 </div>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="src/index.js"></script>
 </html>
