@@ -4,35 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla Weather Application</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
+    <div class="weather-app">
     <header>
       <form>
-        <input type="search" placeholder="Enter a city" required />
-        <input type="submit" value="search" />
+        <input class="search-form-input"type="search" placeholder="Enter a city" required />
+        <input class="search-input-button" type="submit" value="search" />
       </form>
     </header>
     <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Tuesday 14:49 , scattered clouds<br />
-          Humidity:66%, Wind:3.13km/h
+      <div >
+        <h1 class="weather-app-city">Paris</h1>
+        <div class="weather-app-data">
+        <p class="weather-app-details">
+          Tuesday 14:49, Scattered clouds<br />
+          Humidity:<strong>66%</strong>, Wind:<strong>4.63km/h</strong>
         </p>
-      </div>
-      <div>☀21℃</div>
+      <div class="weather-container">
+        <div class="icon">☀</div>
+        <div class="temperature">21</div>
+        <div class="unit">℃</div></div>
+    </div>
     </main>
   </body>
   <footer>
     Coded by
-    <a href="https://github.com/Glorious" target="_blank">Glorious Muiruri</a
-    >Code open-sourced on
+    <a href="https://github.com/Glorious" target="_blank"> Glorious Muiruri </a
+    > ,open-sourced on 
     <a
       href="https://github.com/GloriousNduta/VANILLA-WEATHER-PROJECT"
       target="_blank"
       >Github</a
-    >and website hosted on<a href="https://ndungu.netlify.app/" target="_blank"
+    > and website hosted on <a href="https://ndungu.netlify.app/" target="_blank"
       >Netlify</a
     >
   </footer>
+</div>
 </html>
